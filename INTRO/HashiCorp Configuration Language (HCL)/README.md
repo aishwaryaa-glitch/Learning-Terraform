@@ -1,4 +1,4 @@
-# HCL Syntax Basics
+# HCL Basic Syntax
 
 HCL is designed to be both human-readable and machine-friendly. It uses a structure that is easy to write and understand, making it an ideal language for defining complex configurations.
 
