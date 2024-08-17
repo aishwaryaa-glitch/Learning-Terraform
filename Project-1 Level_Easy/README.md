@@ -1,4 +1,4 @@
-# Deploy Application using Terraform in AWS
+# AWS resource provisioning using Terraform
 
 [**- Defined Providers**](https://github.com/aishwaryaa-glitch/Learning-Terraform/blob/main/Project-1%20Level_Easy/provider.tf)
 
