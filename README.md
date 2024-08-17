@@ -44,5 +44,80 @@ Create new [**SECURITY GROUP**](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
 **LAUNCH INSTANCE**
 
-# Thankyou
+# STEPS TO DOWNLOAD TERRAFORM IN YOUR LINUX EC2 MACHINE
 
+[For Reference](https://phoenixnap.com/kb/how-to-install-terraform)
+
+- Browse to the [DOWNLOAD TERRAFORM FOR LINUX](https://developer.hashicorp.com/terraform/install#linux) page.
+
+- Right-click the Download button for your system's architecture and coply link address. In our case, it is **AMD64**.
+
+![image](https://github.com/user-attachments/assets/55c7bb17-ed67-47ed-a7bb-0287bc220895)
+
+
+- Use the wget tool and the link you previously copied to download the file
+```
+wget https://releases.hashicorp.com/terraform/1.9.4/terraform_1.9.4_linux_amd64.zip
+```
+- Unzip the file to the **usr** directory
+```
+sudo unzip terraform_1.9.2_linux_amd64.zip -d /usr/local/bin
+```
+- Verify the installation
+```
+terraform --version
+```
+******TO UPGRADE TERRAFORM CURRENT VERSION**
+
+You could download the binary :
+```
+wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+```
+then :
+```
+unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+```
+then :
+```
+mv terraform /usr/local/bin/
+```
+make sure to change ${TERRAFORM_VERSION} by the version you want to install
+
+exemple :
+
+0.13.2
+
+# STEPS TO INSTALL AND CONFIGURE AWS-CLI IN YOUR MACHINE
+
+**INSTALL AWS-CLI**
+
+Download the AWS CLI Bundled Installer:
+```
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+```
+Unzip the Downloaded File:
+```
+unzip awscli-bundle.zip
+```
+Run the Installer:
+```
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+```
+Verify the Installation:
+```
+aws --version
+```
+
+**Set Up AWS Credentials:**
+
+Ensure that your EC2 instance has access to the necessary AWS credentials to interact with the AWS services. If your EC2 instance has an IAM role with the appropriate permissions, you don’t need to manually configure credentials. Otherwise, you can set up AWS credentials by running:
+```
+aws configure
+```
+You’ll be prompted to enter your [AWS Access Key ID](https://repost.aws/knowledge-center/create-access-key), [AWS Secret Access Key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/), **Default region name** (e.g., ap-southeast-1), and **Default output format**.
+
+# WHAT NEXT :/
+
+Let's learn how to provision AWS resources one by one using TERRAFORM.
+
+# THANKS :)
