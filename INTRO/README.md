@@ -1,6 +1,11 @@
 # Creating your first Terraform resource
 - [INSTALL TERRAFORM](https://github.com/aishwaryaa-glitch/Learning-Terraform/blob/main/README.md) (if not already installed)
 
+  # TERRAFORM WORLFLOW
+
+  ![image](https://github.com/user-attachments/assets/ff9e5424-9df1-4b5e-9201-51bed59ecb00)
+
+
 - **Create a Project Directory**
 ```
 mkdir my-first-terraform-project
