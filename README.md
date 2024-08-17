@@ -18,19 +18,19 @@ AWS, or Amazon Web Services, is a comprehensive and widely adopted cloud computi
 
 # CREATING AWS EC2 INSTANCE
 
-Search for [**EC2**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) in AWS console
+- Search for [**EC2**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) in AWS console
 
 ![image](https://github.com/user-attachments/assets/c4f01374-a52e-402d-89c3-d99318166afe)
 
-Go to **INSTANCES** and **LAUNCH INSTANCE**
+- Go to **INSTANCES** and **LAUNCH INSTANCE**
 
 ![image](https://github.com/user-attachments/assets/5b342aef-1740-431c-b0d6-518e18459098)
 
-Specify **NAME** and [**SELECT IMAGE TYPE**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) "always try to use free tier image"
+- Specify **NAME** and [**SELECT IMAGE TYPE**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) "always try to use free tier image"
 
 ![image](https://github.com/user-attachments/assets/57fa40bd-dc60-4f41-8951-619bbde6a281)
 
-Select [**INSTANCE TYPE**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) and [**KEY PAIR**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+- Select [**INSTANCE TYPE**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) and [**KEY PAIR**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
 ![image](https://github.com/user-attachments/assets/fba65b44-5c70-4b41-aa64-aaf4d8088bdb)
 
@@ -38,7 +38,7 @@ Select [**INSTANCE TYPE**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/i
 
 ![image](https://github.com/user-attachments/assets/882d70e9-abec-4fa8-869a-0d4112326243)
 
-Create new [**SECURITY GROUP**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) or selet **DEFAULT** one
+- Create new [**SECURITY GROUP**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) or selet **DEFAULT** one
 
 ![image](https://github.com/user-attachments/assets/255fada3-372e-453e-a314-66ea5afe12e8)
 
@@ -85,25 +85,25 @@ make sure to change ${TERRAFORM_VERSION} by the version you want to install
 
 exemple :
 
-0.13.2
+**0.13.2**
 
 # STEPS TO INSTALL AND CONFIGURE AWS-CLI IN YOUR MACHINE
 
 **INSTALL AWS-CLI**
 
-Download the AWS CLI Bundled Installer:
+- Download the AWS CLI Bundled Installer:
 ```
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 ```
-Unzip the Downloaded File:
+- Unzip the Downloaded File:
 ```
 unzip awscli-bundle.zip
 ```
-Run the Installer:
+- Run the Installer:
 ```
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 ```
-Verify the Installation:
+- Verify the Installation:
 ```
 aws --version
 ```
