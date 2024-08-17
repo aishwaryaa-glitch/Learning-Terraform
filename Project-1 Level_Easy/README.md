@@ -4,9 +4,9 @@
 
 [**- Define Networking (VPC, Subnets, Security Group)**](https://github.com/aishwaryaa-glitch/Learning-Terraform/blob/main/Project-1%20Level_Easy/vpc.tf)
 
-[**- Define EC2 Instance**]
+[**- Define EC2 Instance**](https://github.com/aishwaryaa-glitch/Learning-Terraform/blob/main/Project-1%20Level_Easy/ec2.tf)
 
-[**- Output of the Public IP**]
+[**- Output of the Public IP**](https://github.com/aishwaryaa-glitch/Learning-Terraform/blob/main/Project-1%20Level_Easy/output.tf)
 
 **- Initialize Terraform**
 ```
